@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-size: 1.2rem;
+}
+h4{
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-left: 20px;
+}
+i{
+    font-size: 1.1rem;
+    color: #fff;
+}
+p,a{
+    font-size: .9rem;
+}
+hr{
+    border: 1px solid rgba(255,255,255, 0.1);
+    margin: 12px 0;
+}
+/*scroll bar style*/
+::-webkit-scrollbar{
+    width:8px;
+}
+::-webkit-scrollbar-track{
+    background: none;
+}
+::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 5px;
+}
+.sidebar:hover::-webkit-scrollbar-thumb{
+    background: #717171;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #888;
+}
+
+/*header starts here*/
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    padding-right: 40px;
+}
+.logo-img{
+    position: relative;
+    height: 47px;
+    width: 47px;
+    left: 17px;
+    top: 9px;
+}
+img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+#logo-txt{
+    letter-spacing: -1.4px;
+    color:#fff
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    flex: 0 1 685px;
+    margin-left: 40px;
+}
+.search-container form{
+    position: relative;
+    width: 100%;
+}
+.search-container input{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid rgba(255,255,255, 0.1);
+    padding: 12px;
+    color: #fff;
+    font-size: 1 rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.search{
+    min-width: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background-color: #313131;
+    outline: none;
+    border: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.mic{
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+    outline: none;
+    border: none;
+}
+.profile-container{
+    align-items: center;
+    
+}
+.profile-container i{
+    margin-left: 25px;
+}
+
+/* body container starts here*/
+
+.body-container{
+    display: flex;
+    position: fixed;
+    height: calc(100vh-60px);
+    top: 60px;
+    margin-top: -3px;
+}
+.sidebar {
+    background-color: #212121;
+    padding-top: 8px;
+    width: 240px;
+    height: 600px;
+    overflow-y: scroll;
+    color: #fff;
+    
+}
+.sidebar a{
+    text-decoration: none;
+    color: #fff;
+}
+.sidebar-items{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar-item{
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    cursor: pointer;
+    height: 40px;
+}
+.sidebar-item:hover{
+    background-color: #4c4c4c;
+}
+.sidebar-item i{
+    margin-right: 24px;
+}
+.explore{
+    color: #fff;
+    font-size: medium;
+    font-weight: 500;
+    text-transform: none;
+}
+/*main content  stats here*/
+.content{
+    width: calc(100vw-240px);
+}
+.chip-wrapper{
+    overflow-x: scroll;
+    background-color: #181818;
+    display: flex;
+}
+.chip{
+    margin: 12px 6px;
+    background-color: #373737;
+    padding: 6px 12px;
+    border: 1px solid rgba(255,255,255, 0.1);
+    border-radius: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+}
+.chip:hover{
+    background-color: #aaa;
+}
+.video-container{
+    width: 1129px;
+    height: 482px;
+    background-color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+
+} 
+.video-content{
+    position: relative;
+    width: 340px;
+    height: 280px;
+}
+.video-content:hover{
+    background-color: #373737;
+    
+}
+.video{
+    border-radius: 10px;
+}
